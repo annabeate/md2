@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- bootstrap css -->
+
+    <link rel="stylesheet" href="style.css">
+
+        <script>
+        window.onload = function () {
+
+        var chart = new CanvasJS.Chart("chartContainer", {
+            animationEnabled: true,
+            theme: "dark2", // "light1", "light2", "dark1", "dark2"
+            title:{
+                text: "Ģimnāziju oficiālās tīmekļvietnes struktūra un saturs"
+            },
+            axisY: {
+                title: "Pozitīvo atbilžu skaits"
+            },
+            data: [{        
+                type: "column",  
+
+                dataPoints: [      
+                    { y: 10, label: "Par mums" },
+                    { y: 10,  label: "Normatīvie akti" },
+                    { y: 8,  label: "Iestādes struktūra" },
+                    { y: 8,  label: "Publiskie pārskati" },
+                    { y: 10,  label: "Kontakti" },
+                    { y: 10, label: "Kontaktinformācija" },
+                    { y: 7,  label: "Amat pers. un darbinieku saraksts" },
+                    { y: 10,  label: "Atrašanās vieta" },
+                    { y: 10,  label: "Aktualitātes" },
+                    { y: 9,  label: "Darbības jomas" },
+                    { y: 9,  label: "Darbība, uzdevumi, mērķis" },
+                    { y: 10,  label: "Stratēģiskie dokumenti" },
+                    { y: 7,  label: "Starptautiskā sadarbība" },
+                    { y: 7,  label: "ES sab. Līdzdalība" },
+                    { y: 0,  label: "LV dalība starp. organ." }, 
+                    { y: 8,  label: "Pakalpojumi" },
+                    { y: 8,  label: "Sniegtie pakalpojumi" },
+                    { y: 8,  label: "Pakalpojumu info" }, 
+                    { y: 9,  label: "Publikācijas un pārskati" },
+                    { y: 7,  label: "Sabiedrības līdzdalība" }, 
+                    { y: 0,  label: "Izstrādes" },
+                    { y: 8,  label: "Sadarbības partneri" }, 
+                    { y: 8,  label: "Konsultatīvās institūcijas" }, 
+                    { y: 0,  label: "Budžets" },
+                    { y: 0,  label: "Budžetu un finanšu kārtība un termiņi" },
+                    { y: 0,  label: "Atlīdzības kārtība" },
+                    { y: 0,  label: "Īpašumi" },
+                    { y: 0,  label: "Nekustamie īpašumi" },
+                    { y: 0,  label: "Nekustamo īpašumu noma" },
+                    { y: 0,  label: "Manta" },
+                    { y: 8,  label: "Viegli lasīt" },
+                ]
+            }]
+        });
+        chart.render();
+
+        }
+</script>
+</head>
+    
+<body class="p-3 mb-2 bg-light text-dark">
+
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light"  clear="right">
+        <a class="navbar-brand" href="index.html"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="main.html">Galvenā lapa <span class="sr-only"></span></a>
+              </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Izglītības iestādes
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="gimnazijas.html">Ģimnāzijas</a>
+                  <a class="dropdown-item" href="pamatskolas.html">Pamatskolas</a>
+                  <a class="dropdown-item" href="pirmskolas.html">Pirmsskolas</a>
+                    <a class="dropdown-item" href="sportaskolas.html">Sporta skolas</a>
+                    <a class="dropdown-item" href="tehnikumi.html">Tehnikumi</a>
+                    <a class="dropdown-item" href="vidusskolas.html">Vidusskolas</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="kulturas.html">Kultūras iestādes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pasvaldibas.html">Pašvaldības</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="policijas.html">Pašvaldības policijas</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="valstskontrole.html">Valsts kontrole</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="kapitalsabiedribas.html">Valsts un pašvaldības kapitālsabiedrības</a>
+              </li>
+                
+            </ul>
+          </div>
+    </nav>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    
+<p>Visām aplūkotajām ģimnāzijām bija sadaļa - par mums, kontaktinformācija, dokumenti, atrašanās vieta, aktualitātes. Pāris skolu lapās ir vadības saraksts, bet nav visu skolotāju vai arī ievietota skolotāju fotogrāfija. Sadarbība ar ES ir grūti interpretēt, jo iespējams visām skolām šādu sadarbību nav vai arī neatrodas viegli atrodamā vietā. Budžetu, nekustamos īpašumus - neanalizēju, jo nesapratu kādā kontekstā tas ir domāts un šādu informāciju neatradu skolu lapās.</p>    
+
+    <p>04.10. A. B. Būmane aplūkoja šādas mājaslapas:    </p>
+        <ul>
+            <li>https://tukumagimn.lv/ Tukuma Raiņa ģimnāzija</li>
+            <li>https://www.tvg.edu.lv/lv/aktualitates/jaunumi/ Talsu valsts ģimnāzija</li>
+            <li>http://jvg.lv/ Jūrmalas Valsts ģimnāzija</li>
+            <li>https://cvg.edu.lv/ https://cvg.edu.lv/ Cēsu valsts ģimnāzija</li>
+            <li>www.jsg.lv Jelgavas Spīdolas Valsts ģimnāzija</li>
+            <li>http://www.madvg.lv/ Madonas Valsts ģimnāzija</li>	
+            <li>https://jvg.edu.lv/ Jēkabpils Valsts ģimnāzija</li>
+            <li>https://vvg.lv/ Valmieras Valsts ģimnāzija</li>
+            <li>http://daugrc.edu.lv/ Daugavpils Valsts ģimnāzija</li>
+            <li>https://www.kraslavasgimnazija.lv/ Krāslavas Valsts ģimnāzija</li></ul>
+        
+
+    
+</body>
+</html>
